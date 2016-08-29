@@ -1,0 +1,33 @@
+$dash-color: #8BC34A;
+
+
+@keyframes animate-height {
+  0% {
+    transform: scaleY(0);
+  }
+
+  10% {
+    background: $dash-color;
+  }
+
+  100% {
+    transform: scaleY(97);
+    background: $dash-color;
+  }
+}
+
+
+@keyframes animate-width {
+  0% {
+    transform: scaleX(0);
+  }
+
+  10% {
+    background: $dash-color;
+  }
+
+  100% {
+    transform: scaleX(103);
+    background: $dash-color;
+  }
+}
