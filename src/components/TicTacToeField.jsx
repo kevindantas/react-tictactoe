@@ -1,11 +1,25 @@
 import React, {Component} from 'react';
 
-export default class TicTacToeField extends Component {
-  render() {
-    return (
-      <div className={`field field-${this.props.index}`}>
+import FlatButton from 'material-ui/FlatButton';
 
-      </div>
+export default class TicTacToeField extends Component {
+
+  
+  
+  render() {
+    const buttonStyle =  {
+      height: 200,
+      width: 200,
+      lineHeight: 200,
+      overflow: 'visible'
+    };
+
+    return (
+      <FlatButton
+        label="&nbsp;"
+        style={buttonStyle}
+        rippleColor="#CDDC39"
+        className={`field field-${this.props.index}`} />
     );
   }
 }

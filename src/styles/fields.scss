@@ -20,6 +20,7 @@
       position: absolute;
       right: -6px;
       animation: animate-height $animation-duration forwards;
+      will-change: transform, background;
     }
 
 
@@ -31,6 +32,7 @@
       position: absolute;
       bottom: 0;
       animation: animate-width $animation-duration forwards;
+      will-change: transform, background;
     }
 
 
