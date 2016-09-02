@@ -31,3 +31,11 @@ $dash-color: #8BC34A;
     background: $dash-color;
   }
 }
+
+
+
+@keyframes offset-dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

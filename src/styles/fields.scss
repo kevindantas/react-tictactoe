@@ -114,3 +114,31 @@
     }
   }
 }
+
+
+
+.player-mark {
+  stroke-width: 20;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+
+  circle {
+    stroke-dasharray: 410px;
+    stroke-dashoffset: 410;
+    will-change: stroke-dashoffset;
+    animation: offset-dash 0.5s forwards cubic-bezier(0.27, 0.69, 0.93, 1.07);
+  }
+
+  line {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    will-change: stroke-dashoffset;
+    animation: offset-dash 0.5s forwards cubic-bezier(0.27, 0.69, 0.93, 1.07);
+  }
+
+  line:first-child {
+    animation-delay: 0.4s;
+  }
+}
+
